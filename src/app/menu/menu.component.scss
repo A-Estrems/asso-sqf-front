@@ -1,0 +1,44 @@
+:host {
+  .menubar-custom {
+    top: 0;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: fixed;
+    z-index: 999; /* S’il est fixe, augmentez le z-index si nécessaire */
+    width: 100%;
+
+    ::ng-deep .p-menubar {
+      border: none !important;
+      border-radius: 0 !important;
+    }
+
+    .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+      color: #333;
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  /* Logo */
+  .logo {
+    height: 40px;
+    cursor: pointer;
+    margin-left: 1rem; /* petite marge à gauche si souhaité */
+    margin-right: 1rem; /* espace entre le logo et les items */
+  }
+
+  .avatar {
+    cursor: pointer;
+    background-color: #ece9fc;
+    color: #2a1261
+  }
+
+  .end-menu-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
