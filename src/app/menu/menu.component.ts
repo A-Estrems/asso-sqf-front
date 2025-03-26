@@ -6,6 +6,7 @@ import {Menu} from 'primeng/menu';
 import {Ripple} from 'primeng/ripple';
 import {Badge} from 'primeng/badge';
 import {NgIf} from '@angular/common';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -17,6 +18,7 @@ import {NgIf} from '@angular/common';
     Ripple,
     Badge,
     NgIf,
+    RouterLink,
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
@@ -66,6 +68,7 @@ export class MenuComponent implements OnInit {
           {
             label: 'Gestion Site',
             icon: 'pi pi-file',
+            route: '/site'
           },
           {
             label: 'Gestion Association',

@@ -4,7 +4,7 @@ import {ButtonDirective} from 'primeng/button';
 import {Carousel} from 'primeng/carousel';
 import {PrimeTemplate} from 'primeng/api';
 import {TinymceEditorComponent} from '../utils/tinymce-editor/tinymce-editor.component';
-import {GoogleAffichageComponent} from '../google-affichage/google-affichage.component';
+import {GoogleAffichageComponent} from '../utils/google-affichage/google-affichage.component';
 
 @Component({
   selector: 'app-home',

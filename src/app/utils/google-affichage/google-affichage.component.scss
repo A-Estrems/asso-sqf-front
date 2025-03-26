@@ -2,6 +2,7 @@
   .document-content {
     all: unset;
     font-family: inherit;
+    max-width: 100%;
   }
 
   .document-content h1, .document-content h2, .document-content h3 {
@@ -25,8 +26,8 @@
   }
 
   .iframe-container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
