@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Card} from 'primeng/card';
 import {ButtonDirective} from 'primeng/button';
 import {Carousel} from 'primeng/carousel';
 import {PrimeTemplate} from 'primeng/api';
+import {TinymceEditorComponent} from '../utils/tinymce-editor/tinymce-editor.component';
+import {GoogleAffichageComponent} from '../google-affichage/google-affichage.component';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,9 @@ import {PrimeTemplate} from 'primeng/api';
     Card,
     ButtonDirective,
     Carousel,
-    PrimeTemplate
+    PrimeTemplate,
+    TinymceEditorComponent,
+    GoogleAffichageComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

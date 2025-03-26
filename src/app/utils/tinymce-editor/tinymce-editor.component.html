@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>📝 Rédiger un article</h2>
+
+  <editor
+    apiKey="mvxxd633yju853kuq8tajf8n2jvih4rgbbch1fwzy8m31n3n"
+    [(ngModel)]="articleContent"
+    [init]="{
+      height: 500,
+      menubar: true,
+      plugins: 'advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table code help wordcount',
+      toolbar: 'undo redo | formatselect | bold italic underline blockquote | alignleft aligncenter alignright alignjustify | ' +
+               'bullist numlist outdent indent | link image media | table | preview code',
+      image_advtab: true,
+      content_style: 'body { font-family:Arial,sans-serif; font-size:14px; line-height:1.6 }',
+      images_upload_url: '/upload',
+      automatic_uploads: true,
+    }"
+  ></editor>
+
+  <div class="buttons">
+    <button (click)="saveArticle()">💾 Sauvegarder</button>
+    <button (click)="loadArticle()">📂 Charger</button>
+  </div>
+</div>
+
